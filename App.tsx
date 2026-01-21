@@ -4,6 +4,7 @@ import { Hero } from './sections/Hero';
 import { Brands } from './sections/Brands';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
+import { WhatsAppButton } from './components/WhatsAppButton';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { LanguageProvider } from './contexts/LanguageContext';
 
@@ -46,6 +47,7 @@ function AppContent() {
       </main>
       <Footer />
       <ScrollToTop />
+      <WhatsAppButton />
     </div>
   );
 }

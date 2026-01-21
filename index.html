@@ -49,7 +49,7 @@
         ],
         "offers": {
           "@type": "Offer",
-          "price": "10000000",
+          "price": "15000000",
           "priceCurrency": "IDR",
           "name": "Standard Plan",
           "description": "One active request at a time, 48h delivery."
@@ -64,23 +64,7 @@
             "name": "Why wouldn't I just hire a full-time Product Manager?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Hiring a senior PM costs $150k+ annually plus benefits, and it takes months to find the right one. With PMaaS, you get immediate access to senior talent for a fraction of the cost, with the flexibility to pause or cancel anytime."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is there a limit to how many requests I can have?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No! Once subscribed, you can add as many requests to your queue as you'd like. We deliver them one by one (or two at a time on the Pro plan)."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How fast will I receive my deliverables?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "On average, requests are completed in just 48 hours. However, more complex requests like a full product strategy or a comprehensive PRD can take longer."
+              "text": "Hiring a senior PM costs $150k+ annually plus benefits, and it takes months to find the right one. With PMaaS, you get immediate access to a full pod of talent for a fraction of the cost."
             }
           },
           {
@@ -88,23 +72,7 @@
             "name": "Who are the Product Managers?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "We are a team of Senior PMs who have worked at top tech companies and startups. You are not getting a junior PM or an intern; you get seasoned experts."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What if I don't like the work?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No worries! We'll revise it until you're 100% satisfied. The nature of our subscription means we are incentivized to keep you happy every single month."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What communication channels do you use?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We use Trello or Linear for managing requests and Slack for quick communication. We avoid unnecessary meetings to focus on execution, but the Pro plan includes weekly syncs."
+              "text": "We provide a blended team structure. Your account is overseen by a Veteran Senior PM (ex-Unicorn/Big Tech) who handles strategy, while execution is driven by efficient Mid-level and Associate PMs. This ensures you get high-level strategy backed by cost-effective execution."
             }
           }
         ]
@@ -134,15 +102,19 @@
               border: 'rgb(var(--border) / <alpha-value>)',
             },
             animation: {
-              'fade-in': 'fadeIn 0.5s ease-out',
-              'slide-up': 'slideUp 0.5s ease-out',
+              'fade-in': 'fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
+              'slide-up': 'slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
+              'slide-down': 'slideDown 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
+              'zoom-in': 'zoomIn 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
               'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
               'marquee': 'marquee 40s linear infinite',
-              'float': 'float 6s ease-in-out infinite',
-              'shimmer': 'shimmer 2s linear infinite',
+              'float': 'float 8s ease-in-out infinite',
+              'shimmer': 'shimmer 2.5s linear infinite',
               'pop-in': 'popIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards',
               'shimmer-pulse': 'shimmerPulse 3s ease-in-out infinite',
-              'progress-fill': 'progressFill 2s ease-out forwards',
+              'progress-fill': 'progressFill 1.5s ease-out forwards',
+              'word-bounce': 'wordBounce 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards',
+              'sparkle': 'sparkle 2s ease-in-out infinite',
             },
             keyframes: {
               fadeIn: {
@@ -150,8 +122,16 @@
                 '100%': { opacity: '1' },
               },
               slideUp: {
-                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '0%': { transform: 'translateY(30px)', opacity: '0' },
                 '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              slideDown: {
+                '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              zoomIn: {
+                '0%': { transform: 'scale(0.95)', opacity: '0' },
+                '100%': { transform: 'scale(1)', opacity: '1' },
               },
               marquee: {
                 '0%': { transform: 'translateX(0)' },
@@ -159,7 +139,7 @@
               },
               float: {
                 '0%, 100%': { transform: 'translateY(0)' },
-                '50%': { transform: 'translateY(-20px)' },
+                '50%': { transform: 'translateY(-15px)' },
               },
               shimmer: {
                 '0%': { transform: 'translateX(-100%)' },
@@ -171,11 +151,21 @@
               },
               shimmerPulse: {
                 '0%, 100%': { opacity: '1', transform: 'scale(1)' },
-                '50%': { opacity: '0.8', transform: 'scale(1.1)' },
+                '50%': { opacity: '0.8', transform: 'scale(1.05)' },
               },
               progressFill: {
                 '0%': { width: '0%' },
                 '100%': { width: 'var(--target-width, 100%)' },
+              },
+              wordBounce: {
+                '0%': { opacity: '0', transform: 'translateY(40px) rotate(10deg)' },
+                '50%': { opacity: '1', transform: 'translateY(-10px) rotate(-5deg)' },
+                '70%': { transform: 'translateY(5px) rotate(2deg)' },
+                '100%': { opacity: '1', transform: 'translateY(0) rotate(0)' },
+              },
+              sparkle: {
+                '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+                '50%': { opacity: '0.7', transform: 'scale(1.2) rotate(15deg)' },
               }
             },
           },
@@ -185,29 +175,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
     <style>
       :root {
-        /* Dark Mode (Fallback/Original) */
-        --background: 10 10 10; 
-        --surface: 23 23 23; 
-        --surface-highlight: 38 38 38; 
-        --primary: 255 255 255; 
-        --primary-foreground: 0 0 0; 
-        --muted: 161 161 170; 
-        --border: 39 39 42; 
-      }
-
-      [data-theme='light'] {
-        /* Light Mode - Refined for Cleanliness */
+        /* Light Mode (Default in Root now) */
         --background: 255 255 255; /* Pure White */
-        --surface: 249 250 251; /* Gray 50 - Very subtle off-white for cards */
-        --surface-highlight: 243 244 246; /* Gray 100 - Interaction states */
-        --primary: 15 23 42; /* Slate 900 - Sharp Black/Blue for text */
+        --surface: 249 250 251; /* Gray 50 */
+        --surface-highlight: 243 244 246; /* Gray 100 */
+        --primary: 15 23 42; /* Slate 900 */
         --primary-foreground: 255 255 255; 
-        --muted: 100 116 139; /* Slate 500 - Balanced gray */
-        --border: 226 232 240; /* Slate 200 - Soft borders */
+        --muted: 100 116 139; /* Slate 500 */
+        --border: 226 232 240; /* Slate 200 */
       }
 
       [data-theme='dark'] {
-         /* Explicit Dark Mode Overrides if needed, matching root defaults */
+        /* Dark Mode Override */
         --background: 10 10 10; 
         --surface: 23 23 23; 
         --surface-highlight: 38 38 38; 
@@ -218,9 +197,11 @@
       }
 
       body {
-        background-color: rgb(var(--background));
+        /* Subtle Gradient Background */
+        background-image: linear-gradient(to bottom right, rgb(var(--surface)), rgb(var(--background)));
+        background-attachment: fixed;
         color: rgb(var(--primary));
-        transition: background-color 0.3s ease, color 0.3s ease;
+        transition: color 0.3s ease;
       }
       
       html {
@@ -251,6 +232,12 @@
         transform: translateZ(0);
         backface-visibility: hidden;
         perspective: 1000px;
+      }
+
+      /* Mask utility for seamless marquees */
+      .mask-linear-fade {
+        mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
       }
     </style>
   <script type="importmap">

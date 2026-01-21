@@ -45,12 +45,12 @@ export const UseCases: React.FC = () => {
           const bgHoverClass = bgAccents[index];
 
           return (
-            <FadeIn key={index} delay={index * 150} className="h-full">
+            <FadeIn key={index} delay={index * 150} className="h-full" scale>
               <div 
                 onMouseMove={handleMouseMove}
-                className={`relative group h-full overflow-hidden rounded-2xl bg-surface border border-border p-8 transition-all duration-300 ${bgHoverClass} hover:-translate-y-1 hover:scale-[1.02] hover:shadow-2xl`}
+                className={`relative group h-full overflow-hidden rounded-2xl bg-surface border border-border p-8 transition-all duration-300 ${bgHoverClass} hover:-translate-y-1 hover:scale-[1.01] hover:shadow-2xl hover:shadow-primary/5`}
               >
-                 {/* Spotlight Effect - Uses primary color opacity for light/dark compatibility */}
+                 {/* Spotlight Effect */}
                  <div 
                   className="pointer-events-none absolute -inset-px opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0 mix-blend-soft-light"
                   style={{
@@ -62,31 +62,31 @@ export const UseCases: React.FC = () => {
                   <Icon className="w-24 h-24 rotate-12" />
                 </div>
                 
-                <div className="relative z-10">
-                  <div className={`w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-background group-hover:border-primary/10 transition-colors group-hover:scale-110 duration-300`}>
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className={`w-12 h-12 rounded-full bg-background border border-border flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-background group-hover:border-primary/10 transition-colors group-hover:scale-110 duration-300 shadow-sm`}>
                     <Icon className={`w-5 h-5 ${accentClass} group-hover:text-background`} />
                   </div>
                   
                   <h3 className="text-xl font-bold text-primary mb-4">{useCase.title}</h3>
                   
-                  <div className="space-y-4 mb-8">
+                  <div className="space-y-5 mb-8 flex-grow">
                     <div>
                       <span className="text-xs font-bold text-muted uppercase tracking-wider">{t.useCases.labels.scenario}</span>
-                      <p className="text-sm text-muted mt-1">{useCase.scenario}</p>
+                      <p className="text-sm text-muted mt-1 leading-relaxed">{useCase.scenario}</p>
                     </div>
                     <div>
                       <span className="text-xs font-bold text-blue-500 uppercase tracking-wider">{t.useCases.labels.solution}</span>
-                      <p className="text-sm text-primary/80 mt-1">{useCase.solution}</p>
+                      <p className="text-sm text-primary/80 mt-1 leading-relaxed">{useCase.solution}</p>
                     </div>
                     <div>
                       <span className="text-xs font-bold text-green-500 uppercase tracking-wider">{t.useCases.labels.outcome}</span>
-                      <p className="text-sm text-primary mt-1">{useCase.outcome}</p>
+                      <p className="text-sm text-primary mt-1 font-medium">{useCase.outcome}</p>
                     </div>
                   </div>
 
-                  <div className="flex flex-wrap gap-2 pt-4 border-t border-border/50">
+                  <div className="flex flex-wrap gap-2 pt-4 border-t border-border/50 mt-auto">
                     {useCase.tags.map(tag => (
-                      <span key={tag} className="text-[10px] font-medium px-2 py-1 rounded-full bg-background text-muted border border-border group-hover:border-primary/10 group-hover:text-primary transition-colors">
+                      <span key={tag} className="text-[10px] font-medium px-2 py-1 rounded-full bg-background text-muted border border-border group-hover:border-primary/20 group-hover:text-primary transition-colors">
                         {tag}
                       </span>
                     ))}

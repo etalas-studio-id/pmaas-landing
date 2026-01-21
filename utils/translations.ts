@@ -9,90 +9,90 @@ export const translations = {
       getStarted: "Get Started"
     },
     hero: {
-      badge: "Accepting new clients for Q3",
+      badge: "⚡ Instant Access: Scale Your Product Operations",
       titleLine1: "Product Management",
       titleLine2: "as a Service.",
-      description: "Get a world-class Product Team for a flat monthly fee. Pause or cancel anytime. We build strategies, manage backlogs, and drive execution so you can scale.",
+      description: "Access a world-class Product Pod for a flat monthly fee. We systematize strategy, backlog management, and execution to accelerate your roadmap.",
       viewPlans: "View Plans",
-      howItWorks: "See how it works",
-      noHiring: "No hiring headaches",
-      start48h: "Start in 48 hours",
+      howItWorks: "How it works",
+      noHiring: "Eliminate hiring overhead",
+      start48h: "Onboard in 48 hours",
       roadmap: "roadmap_v2.tsx",
       sprintComplete: "Sprint Completed",
-      velocity: "Velocity +15% increase"
+      velocity: "Velocity +24% increase"
     },
     brands: {
-      trustedBy: "Trusted by innovative product teams"
+      trustedBy: "Empowering innovative product teams at"
     },
     whatIs: {
       title: "What is",
-      desc1: "Product Management as a Service (PMaaS) is a model where companies outsource their product management needs to expert providers instead of hiring full-time internal staff.",
-      desc2: "Think of it as renting high-level product expertise. Whether you need to craft a strategy, manage a backlog, or launch a new feature, PMaaS provides the strategic execution without the overhead of permanent headcount.",
-      idealFor: "Ideal for: Startups, Enterprise Scaling, and Digital Transformations.",
+      desc1: "Product Management as a Service (PMaaS) is an operational model where companies leverage expert external pods to handle product lifecycles instead of relying solely on internal headcount.",
+      desc2: "It serves as an on-demand extension of your leadership. Whether you need to pivot strategy, optimize a backlog, or launch a complex feature, PMaaS delivers strategic execution without the latency of recruitment.",
+      idealFor: "Optimized for: High-Growth Startups, Enterprise Scaling, and Digital Transformations.",
       cards: {
-        strategy: { title: "Strategy", desc: "Direction, market research, and competitive analysis to find product-market fit." },
-        development: { title: "Development", desc: "Hands-on backlog grooming, sprint management, and engineering coordination." },
-        launch: { title: "Launch", desc: "Go-to-market planning, sales enablement, and marketing messaging." },
-        lifecycle: { title: "Lifecycle", desc: "Continuous measurement, analytics implementation, and iteration." }
+        strategy: { title: "Strategy", desc: "Market intelligence, competitive audits, and roadmap alignment to ensure product-market fit." },
+        development: { title: "Development", desc: " rigorous backlog grooming, sprint planning, and engineering coordination." },
+        launch: { title: "Launch", desc: "Comprehensive Go-to-Market planning, sales enablement, and positioning." },
+        lifecycle: { title: "Lifecycle", desc: "Data-driven iteration, retention analysis, and continuous performance measurement." }
       }
     },
     benefits: {
       title: "Why choose",
       subtitle: "PMaaS?",
-      desc: "The traditional hiring model is slow and expensive. We provide a modern, agile alternative designed for growth.",
+      desc: "Traditional hiring is capital intensive and slow. We offer a modular, agile alternative engineered for speed and efficiency.",
       items: {
-        cost: { title: "Cost Efficiency", desc: "Avoid $150k+ salaries, benefits, and recruiting costs. Pay a flat monthly fee for premium talent only when you need it." },
-        expert: { title: "Instant Expertise", desc: "Access Senior PMs immediately. We bring industry best practices and minimize the risks inherent in product development." },
-        speed: { title: "Speed to Market", desc: "Accelerate your roadmap. We focus purely on execution, removing bottlenecks to get your features into users' hands faster." },
-        flex: { title: "Flexibility & Scale", desc: "Scale up or down based on your business cycles. Launching a new product? Add more capacity. Maintenance mode? Pause." },
-        focus: { title: "Focus on Core", desc: "Free up your internal resources to focus on your core business competencies while we handle the product intricacies." },
-        data: { title: "Data Driven", desc: "We don't guess. We implement metrics and analytics systems to monitor performance and drive continuous improvement." }
+        cost: { title: "Capital Efficiency", desc: "Reallocate the $150k+ cost of full-time senior hires. Access premium talent for a flat monthly fee, only when required." },
+        expert: { title: "Pod-Based Expertise", desc: "Access a complete product pod. Execution is handled by efficient associates, backed by the strategic oversight of Veteran Senior PMs." },
+        speed: { title: "Speed to Value", desc: "Accelerate delivery. We focus purely on execution, removing administrative bottlenecks to deploy features faster." },
+        flex: { title: "Dynamic Scalability", desc: "Align resources with your business cycles. Scale capacity up for launches or down for maintenance instantly." },
+        focus: { title: "Strategic Focus", desc: "Liberate your core leadership to focus on business growth while we handle the intricacies of product delivery." },
+        data: { title: "Data-Driven Decisions", desc: "We replace guesswork with rigor. We implement advanced analytics to validate hypotheses and measure impact." }
       }
     },
     useCases: {
       title: "Real world",
       subtitle: "impact.",
-      desc: "Whether you are launching a new venture or optimizing a legacy system, PMaaS adapts to your specific stage.",
+      desc: "From new venture creation to legacy system optimization, PMaaS integrates seamlessly at any stage of the product lifecycle.",
       labels: { scenario: "Scenario", solution: "Our Solution", outcome: "Outcome" },
       items: {
-        startup: { title: "Startup Acceleration", scenario: "A tech startup with limited assets needs to launch a mobile app but lacks internal product management experience.", solution: "We manage the entire product lifecycle: defining strategy, designing for users, and coordinating with developers.", outcome: "Successful launch with fast turnaround, positive app reviews, and increased investor funding." },
-        enterprise: { title: "Enterprise Optimization", scenario: "A large enterprise software company struggles to optimize its portfolio with limited internal resources.", solution: "We analyze competencies, gather customer feedback, and identify weaknesses to restructure the portfolio.", outcome: "Enhanced features, improved customer satisfaction scores, and increased revenue growth." },
-        ecommerce: { title: "E-commerce Expansion", scenario: "A retailer wants to build a new online marketplace but lacks technical digital product competence.", solution: "We conduct market research, define the value prop, and create the roadmap for the platform development.", outcome: "Launched a vital new income generator connecting buyers and sellers, expanding market presence." }
+        startup: { title: "Venture Acceleration", scenario: "A tech startup needs to launch a mobile MVP but lacks internal product leadership to guide engineering.", solution: "We managed the full lifecycle: defined the MVP scope, designed UX flows, and coordinated the dev sprint.", outcome: "Successful market entry with positive early retention and secured Seed funding." },
+        enterprise: { title: "Enterprise Optimization", scenario: "A large enterprise software firm struggles to modernize its legacy portfolio due to resource constraints.", solution: "We audited the portfolio, gathered user feedback, and identified high-impact optimization opportunities.", outcome: "Modernized UX, increased customer satisfaction scores (CSAT), and reduced churn." },
+        ecommerce: { title: "Digital Expansion", scenario: "A traditional retailer seeks to build a proprietary marketplace but lacks digital product DNA.", solution: "We conducted market research, defined the platform value prop, and managed the platform build.", outcome: "Launched a new high-margin digital revenue stream connecting buyers and sellers." }
       }
     },
     services: {
-      title: "Everything you need to",
-      subtitle: "build better products.",
-      desc: "From high-level strategy to day-to-day execution, we cover the entire product lifecycle. No silos, just results.",
+      title: "Comprehensive product",
+      subtitle: "capabilities.",
+      desc: "From macro strategy to micro execution, we cover the full spectrum of product management. No silos, just results.",
       items: {
-        strategy: { title: "Product Strategy", desc: "Align your business goals with user needs. We craft comprehensive product visions, roadmaps, and go-to-market strategies." },
-        execution: { title: "Execution & Delivery", desc: "Turn strategy into reality. We manage sprints, groom backlogs, and ensure your engineering team is unblocked and shipping." },
-        research: { title: "User Research", desc: "Stop guessing. We conduct qualitative and quantitative research to validate assumptions and find product-market fit." },
-        growth: { title: "Growth & Analytics", desc: "Data-driven decision making. We set up tracking, analyze funnels, and run experiments to improve conversion and retention." },
-        design: { title: "Product Design", desc: "We work closely with designers to create intuitive, beautiful interfaces that solve real user problems." },
-        market: { title: "Market Analysis", desc: "Understand your landscape. We analyze competitors, trends, and opportunities to position your product for success." }
+        strategy: { title: "Product Strategy", desc: "Align business objectives with user needs. We craft defensible product visions and roadmaps." },
+        execution: { title: "Agile Execution", desc: "Turn strategy into shipped software. We manage sprints, refine backlogs, and unblock engineers." },
+        research: { title: "User Research", desc: "Validate before you build. We conduct qualitative and quantitative research to mitigate risk." },
+        growth: { title: "Growth & Analytics", desc: "Measure what matters. We implement funnel tracking and run experiments to optimize conversion." },
+        design: { title: "Product Design", desc: "We collaborate with designers to create intuitive, accessible interfaces that solve user problems." },
+        market: { title: "Market Intelligence", desc: "Know your landscape. We analyze competitors and trends to sharpen your positioning." }
       }
     },
     howItWorks: {
-      title: "It's not magic.",
-      subtitle: "It's a system.",
-      desc: "We've streamlined the product management process to integrate seamlessly with your existing team. No lengthy onboarding, no HR overhead.",
+      title: "Systematized",
+      subtitle: "Product Delivery.",
+      desc: "We've engineered a streamlined process that integrates with your existing workflows. No lengthy onboarding, no HR overhead.",
       steps: {
-        one: { title: "Subscribe & Request", desc: "Choose a plan and get immediate access to your Trello/Linear board. Submit your first request instantly." },
-        two: { title: "We Execute", desc: "Your dedicated PM picks up the task. Whether it's a PRD, a user interview, or a sprint plan, we get to work." },
-        three: { title: "Review & Iterate", desc: "Get deliverables in 24-48 hours. Review, approve, or ask for revisions. We keep going until it's perfect." }
+        one: { title: "Subscribe & Request", desc: "Select a plan and access your dedicated board instantly. Submit your first initiative." },
+        two: { title: "Execution Pod", desc: "Your PM pod activates. Tasks are executed efficiently, with strategy reviewed by Senior leads." },
+        three: { title: "Review & Iterate", desc: "Receive deliverables in 24-48 hours. Review, approve, or request revisions until it meets your standard." }
       },
       mock: {
         reqTitle: "Request #120",
-        reqBody: "We need a Product Requirements Document (PRD) for the new dashboard analytics feature. Focus on retention metrics.",
+        reqBody: "Require a PRD for the new analytics dashboard. Focus on retention metrics and data visualization.",
         status: "In Progress",
-        resBody: "On it. I'll start by reviewing the current data schema and competitor implementations. Expect a draft by tomorrow EOD.",
+        resBody: "Acknowledged. We are reviewing the current schema and competitor implementations. Draft delivery by EOD tomorrow.",
         sync: "Syncing to Linear..."
       }
     },
     testimonials: {
-      title: "Loved by",
-      subtitle: "Founders & VP Products",
+      title: "Trusted by",
+      subtitle: "Product Leaders",
       items: [
         { quote: "PMaaS accelerated our product roadmap significantly. Their strategic insight into identity verification markets was invaluable for our growth.", author: "Ahmad Taufik", role: "SVP Product", company: "VIDA" },
         { quote: "As a CEO, I need execution. The team integrated seamlessly and delivered features that directly impacted our bottom line.", author: "Pandu Hartanto", role: "CEO", company: "Etalas" },
@@ -102,46 +102,46 @@ export const translations = {
       ]
     },
     pricing: {
-      title: "Simple, transparent pricing.",
-      desc: "No hidden fees. No long-term contracts. Just a flat monthly rate for premium product management.",
+      title: "Transparent Investment.",
+      desc: "No hidden fees. No long-term lock-ins. Just a predictable monthly rate for premium product leadership.",
       mostPopular: "Most Popular",
-      bookCall: "Book a call",
-      notSure: "Not sure which plan?",
+      bookCall: "Book a consultation",
+      notSure: "Need guidance?",
       schedule: "Schedule 15 mins",
       plans: {
         standard: {
           name: "Standard",
-          desc: "Perfect for startups needing a part-time Product Manager to keep things moving.",
-          btn: "Start Standard",
-          features: ["One request at a time", "Average 48h delivery", "Product Strategy & Roadmapping", "User Stories & PRDs", "Backlog Management", "Unlimited users", "Pause or cancel anytime"]
+          desc: "Ideal for startups requiring efficient execution backed by senior oversight.",
+          btn: "Select Standard",
+          features: ["One active request", "Average 48h delivery", "Product Strategy & Roadmapping", "User Stories & PRDs", "Backlog Management", "Unlimited users", "Pause or cancel anytime"]
         },
         pro: {
           name: "Pro",
-          desc: "Equivalent to a Senior PM. Best for scaling companies with active development.",
-          btn: "Start Pro",
-          features: ["Two requests at a time", "Priority support", "Everything in Standard", "User Research & Testing", "Data Analytics Setup", "Competitor Analysis", "Weekly Sync Meetings"]
+          desc: "Designed for scaling companies. Double throughput with active senior strategic involvement.",
+          btn: "Select Pro",
+          features: ["Two active requests", "Priority support", "Everything in Standard", "User Research & Testing", "Data Analytics Setup", "Competitor Analysis", "Weekly Sync Meetings"]
         },
         enterprise: {
           name: "Enterprise",
-          desc: "For organizations needing a full product pod (PM + Designer + Analyst).",
-          btn: "Contact Us",
+          desc: "For organizations requiring a fully integrated, dedicated product pod.",
+          btn: "Contact Sales",
           features: ["Custom request volume", "Dedicated Product Pod", "Full-time equivalent availability", "On-site workshops", "Enterprise SLA", "Custom tooling integration"]
         }
       }
     },
     faq: {
-      title: "Frequently asked questions",
+      title: "Frequently Asked Questions",
       items: [
-        { q: "Why wouldn't I just hire a full-time Product Manager?", a: "Hiring a senior PM costs $150k+ annually plus benefits, and it takes months to find the right one. With PMaaS, you get immediate access to senior talent for a fraction of the cost, with the flexibility to pause or cancel anytime." },
-        { q: "Is there a limit to how many requests I can have?", a: "No! Once subscribed, you can add as many requests to your queue as you'd like. We deliver them one by one (or two at a time on the Pro plan)." },
-        { q: "How fast will I receive my deliverables?", a: "On average, requests are completed in just 48 hours. However, more complex requests like a full product strategy or a comprehensive PRD can take longer." },
-        { q: "Who are the Product Managers?", a: "We are a team of Senior PMs who have worked at top tech companies and startups. You are not getting a junior PM or an intern; you get seasoned experts." },
-        { q: "What if I don't like the work?", a: "No worries! We'll revise it until you're 100% satisfied. The nature of our subscription means we are incentivized to keep you happy every single month." },
-        { q: "What communication channels do you use?", a: "We use Trello or Linear for managing requests and Slack for quick communication. We avoid unnecessary meetings to focus on execution, but the Pro plan includes weekly syncs." }
+        { q: "Why use PMaaS instead of hiring full-time?", a: "Hiring a senior PM costs $150k+ annually plus benefits, and it takes months to find the right one. PMaaS offers immediate access to a calibrated pod of talent for a fraction of the cost, with the flexibility to scale up or down instantly." },
+        { q: "Is there a limit to request volume?", a: "No. You can add unlimited requests to your backlog. We deliver them sequentially (or two concurrently on the Pro plan), ensuring steady, focused progress." },
+        { q: "What is the typical turnaround time?", a: "On average, standard requests are completed within 48 hours. Complex strategic initiatives or comprehensive PRDs may require additional time for depth and quality assurance." },
+        { q: "Who comprises the product team?", a: "We utilize a blended pod structure. Your account is overseen by a Veteran Senior PM (ex-Unicorn/Big Tech) for strategy and QA, while execution is handled by efficient Mid-level and Associate PMs. This balances high-level strategy with cost-effective execution." },
+        { q: "What if the output doesn't meet expectations?", a: "We offer unlimited revisions. We will iterate on the deliverable until it meets your exact standards. Our subscription model ensures we are constantly incentivized to deliver value." },
+        { q: "What is the communication protocol?", a: "We utilize async tools like Trello or Linear for backlog management and Slack for rapid communication. We minimize meeting overhead to maximize execution time, though Pro plans include weekly alignment syncs." }
       ]
     },
     footer: {
-      desc: "The modern way to scale product teams. Fractional Product Management for ambitious startups.",
+      desc: "The modern operating model for scaling product teams. Fractional Product Management for ambitious enterprises.",
       sitemap: "Sitemap",
       legal: "Legal",
       connect: "Connect",
@@ -163,90 +163,90 @@ export const translations = {
       getStarted: "Mulai Sekarang"
     },
     hero: {
-      badge: "Menerima klien baru untuk Q3",
+      badge: "⚡ Akses Instan: Skalakan Operasi Produk",
       titleLine1: "Manajemen Produk",
       titleLine2: "sebagai Layanan.",
-      description: "Dapatkan Tim Produk kelas dunia dengan biaya bulanan tetap. Jeda atau batalkan kapan saja. Kami membangun strategi, mengelola backlog, dan mendorong eksekusi agar Anda dapat berkembang.",
+      description: "Akses Pod Produk kelas dunia dengan biaya bulanan tetap. Kami mensistematisasi strategi, manajemen backlog, dan eksekusi untuk mempercepat roadmap Anda.",
       viewPlans: "Lihat Paket",
       howItWorks: "Cara kerja",
-      noHiring: "Tanpa pusing rekrutmen",
-      start48h: "Mulai dalam 48 jam",
+      noHiring: "Tanpa overhead rekrutmen",
+      start48h: "Onboard dalam 48 jam",
       roadmap: "roadmap_v2.tsx",
       sprintComplete: "Sprint Selesai",
-      velocity: "Velocity +15% meningkat"
+      velocity: "Velocity +24% meningkat"
     },
     brands: {
-      trustedBy: "Dipercaya oleh tim produk inovatif"
+      trustedBy: "Memberdayakan tim produk inovatif di"
     },
     whatIs: {
       title: "Apa itu",
-      desc1: "Product Management as a Service (PMaaS) adalah model di mana perusahaan melakukan outsourcing kebutuhan manajemen produk mereka kepada penyedia ahli alih-alih mempekerjakan staf internal penuh waktu.",
-      desc2: "Anggap saja sebagai menyewa keahlian produk tingkat tinggi. Apakah Anda perlu menyusun strategi, mengelola backlog, atau meluncurkan fitur baru, PMaaS memberikan eksekusi strategis tanpa biaya overhead karyawan tetap.",
-      idealFor: "Ideal untuk: Startup, Scaling Perusahaan, dan Transformasi Digital.",
+      desc1: "Product Management as a Service (PMaaS) adalah model operasional di mana perusahaan memanfaatkan pod eksternal ahli untuk menangani siklus hidup produk alih-alih hanya mengandalkan headcount internal.",
+      desc2: "Ini berfungsi sebagai perpanjangan on-demand dari kepemimpinan Anda. Baik Anda perlu mengubah strategi, mengoptimalkan backlog, atau meluncurkan fitur kompleks, PMaaS memberikan eksekusi strategis tanpa latensi rekrutmen.",
+      idealFor: "Dioptimalkan untuk: Startup Pertumbuhan Tinggi, Scaling Perusahaan, dan Transformasi Digital.",
       cards: {
-        strategy: { title: "Strategi", desc: "Arahan, riset pasar, dan analisis kompetitif untuk menemukan kecocokan produk-pasar." },
-        development: { title: "Pengembangan", desc: "Pengelolaan backlog langsung, manajemen sprint, dan koordinasi teknik." },
-        launch: { title: "Peluncuran", desc: "Perencanaan go-to-market, pemberdayaan penjualan, dan pesan pemasaran." },
-        lifecycle: { title: "Siklus Hidup", desc: "Pengukuran berkelanjutan, implementasi analitik, dan iterasi." }
+        strategy: { title: "Strategi", desc: "Intelijen pasar, audit kompetitif, dan penyelarasan roadmap untuk memastikan product-market fit." },
+        development: { title: "Pengembangan", desc: "Grooming backlog yang ketat, perencanaan sprint, dan koordinasi teknik." },
+        launch: { title: "Peluncuran", desc: "Perencanaan Go-to-Market komprehensif, pemberdayaan penjualan, dan positioning." },
+        lifecycle: { title: "Siklus Hidup", desc: "Iterasi berbasis data, analisis retensi, dan pengukuran kinerja berkelanjutan." }
       }
     },
     benefits: {
       title: "Mengapa memilih",
       subtitle: "PMaaS?",
-      desc: "Model perekrutan tradisional lambat dan mahal. Kami menyediakan alternatif modern dan gesit yang dirancang untuk pertumbuhan.",
+      desc: "Perekrutan tradisional itu padat modal dan lambat. Kami menawarkan alternatif modular dan gesit yang dirancang untuk kecepatan dan efisiensi.",
       items: {
-        cost: { title: "Efisiensi Biaya", desc: "Hindari gaji $150k+, tunjangan, dan biaya rekrutmen. Bayar biaya bulanan tetap untuk talenta premium hanya saat Anda membutuhkannya." },
-        expert: { title: "Keahlian Instan", desc: "Akses Senior PM segera. Kami membawa praktik terbaik industri dan meminimalkan risiko dalam pengembangan produk." },
-        speed: { title: "Kecepatan ke Pasar", desc: "Percepat roadmap Anda. Kami fokus murni pada eksekusi, menghilangkan hambatan untuk membawa fitur ke tangan pengguna lebih cepat." },
-        flex: { title: "Fleksibilitas & Skala", desc: "Skala naik atau turun berdasarkan siklus bisnis Anda. Meluncurkan produk baru? Tambah kapasitas. Mode pemeliharaan? Jeda." },
-        focus: { title: "Fokus pada Inti", desc: "Bebaskan sumber daya internal Anda untuk fokus pada kompetensi bisnis inti sementara kami menangani kerumitan produk." },
-        data: { title: "Berbasis Data", desc: "Kami tidak menebak. Kami menerapkan metrik dan sistem analitik untuk memantau kinerja dan mendorong perbaikan berkelanjutan." }
+        cost: { title: "Efisiensi Modal", desc: "Realokasi biaya $150k+ dari karyawan senior penuh waktu. Akses talenta premium dengan biaya bulanan tetap, hanya saat dibutuhkan." },
+        expert: { title: "Keahlian Berbasis Pod", desc: "Akses pod produk lengkap. Eksekusi ditangani oleh associate yang efisien, didukung oleh pengawasan strategis Senior PM Veteran." },
+        speed: { title: "Kecepatan Nilai", desc: "Percepat pengiriman. Kami fokus murni pada eksekusi, menghilangkan hambatan administratif untuk menyebarkan fitur lebih cepat." },
+        flex: { title: "Skalabilitas Dinamis", desc: "Selaraskan sumber daya dengan siklus bisnis Anda. Skala kapasitas naik untuk peluncuran atau turun untuk pemeliharaan secara instan." },
+        focus: { title: "Fokus Strategis", desc: "Bebaskan kepemimpinan inti Anda untuk fokus pada pertumbuhan bisnis sementara kami menangani kerumitan pengiriman produk." },
+        data: { title: "Keputusan Berbasis Data", desc: "Kami mengganti tebakan dengan ketelitian. Kami menerapkan analitik canggih untuk memvalidasi hipotesis dan mengukur dampak." }
       }
     },
     useCases: {
       title: "Dampak",
       subtitle: "dunia nyata.",
-      desc: "Baik Anda meluncurkan usaha baru atau mengoptimalkan sistem lama, PMaaS beradaptasi dengan tahap spesifik Anda.",
+      desc: "Dari penciptaan usaha baru hingga optimalisasi sistem lama, PMaaS berintegrasi dengan mulus pada setiap tahap siklus hidup produk.",
       labels: { scenario: "Skenario", solution: "Solusi Kami", outcome: "Hasil" },
       items: {
-        startup: { title: "Akselerasi Startup", scenario: "Startup teknologi dengan aset terbatas perlu meluncurkan aplikasi seluler tetapi kurang pengalaman manajemen produk internal.", solution: "Kami mengelola seluruh siklus hidup produk: mendefinisikan strategi, merancang untuk pengguna, dan berkoordinasi dengan pengembang.", outcome: "Peluncuran sukses dengan penyelesaian cepat, ulasan aplikasi positif, dan peningkatan pendanaan investor." },
-        enterprise: { title: "Optimasi Perusahaan", scenario: "Perusahaan perangkat lunak besar berjuang mengoptimalkan portofolionya dengan sumber daya internal terbatas.", solution: "Kami menganalisis kompetensi, mengumpulkan umpan balik pelanggan, dan mengidentifikasi kelemahan untuk merestrukturisasi portofolio.", outcome: "Fitur yang ditingkatkan, skor kepuasan pelanggan yang lebih baik, dan peningkatan pertumbuhan pendapatan." },
-        ecommerce: { title: "Ekspansi E-commerce", scenario: "Pengecer ingin membangun pasar online baru tetapi kurang kompetensi produk digital teknis.", solution: "Kami melakukan riset pasar, mendefinisikan proposisi nilai, dan membuat roadmap untuk pengembangan platform.", outcome: "Meluncurkan penghasil pendapatan baru yang vital menghubungkan pembeli dan penjual, memperluas kehadiran pasar." }
+        startup: { title: "Akselerasi Usaha", scenario: "Startup teknologi perlu meluncurkan MVP seluler tetapi kurang kepemimpinan produk internal untuk memandu teknik.", solution: "Kami mengelola siklus hidup penuh: mendefinisikan ruang lingkup MVP, merancang alur UX, dan mengoordinasikan sprint dev.", outcome: "Masuk pasar sukses dengan retensi awal positif dan pendanaan Seed yang diamankan." },
+        enterprise: { title: "Optimasi Perusahaan", scenario: "Perusahaan perangkat lunak besar berjuang memodernisasi portofolio lama karena keterbatasan sumber daya.", solution: "Kami mengaudit portofolio, mengumpulkan umpan balik pengguna, dan mengidentifikasi peluang optimasi berdampak tinggi.", outcome: "UX yang dimodernisasi, peningkatan skor kepuasan pelanggan (CSAT), dan churn yang berkurang." },
+        ecommerce: { title: "Ekspansi Digital", scenario: "Pengecer tradisional ingin membangun pasar online milik sendiri tetapi kurang DNA produk digital.", solution: "Kami melakukan riset pasar, mendefinisikan proposisi nilai platform, dan mengelola pembangunan platform.", outcome: "Meluncurkan aliran pendapatan digital margin tinggi baru yang menghubungkan pembeli dan penjual." }
       }
     },
     services: {
-      title: "Segala yang Anda butuhkan untuk",
-      subtitle: "membangun produk lebih baik.",
-      desc: "Dari strategi tingkat tinggi hingga eksekusi sehari-hari, kami mencakup seluruh siklus hidup produk. Tanpa sekat, hanya hasil.",
+      title: "Kapabilitas produk",
+      subtitle: "komprehensif.",
+      desc: "Dari strategi makro hingga eksekusi mikro, kami mencakup spektrum penuh manajemen produk. Tanpa sekat, hanya hasil.",
       items: {
-        strategy: { title: "Strategi Produk", desc: "Selaraskan tujuan bisnis Anda dengan kebutuhan pengguna. Kami menyusun visi produk komprehensif, roadmap, dan strategi go-to-market." },
-        execution: { title: "Eksekusi & Pengiriman", desc: "Ubah strategi menjadi kenyataan. Kami mengelola sprint, merapikan backlog, dan memastikan tim teknik Anda lancar dan mengirimkan produk." },
-        research: { title: "Riset Pengguna", desc: "Berhenti menebak. Kami melakukan riset kualitatif dan kuantitatif untuk memvalidasi asumsi dan menemukan kecocokan produk-pasar." },
-        growth: { title: "Pertumbuhan & Analitik", desc: "Pengambilan keputusan berbasis data. Kami mengatur pelacakan, menganalisis corong, dan menjalankan eksperimen untuk meningkatkan konversi dan retensi." },
-        design: { title: "Desain Produk", desc: "Kami bekerja erat dengan desainer untuk membuat antarmuka intuitif dan indah yang memecahkan masalah pengguna nyata." },
-        market: { title: "Analisis Pasar", desc: "Pahami lanskap Anda. Kami menganalisis pesaing, tren, dan peluang untuk memposisikan produk Anda agar sukses." }
+        strategy: { title: "Strategi Produk", desc: "Selaraskan tujuan bisnis dengan kebutuhan pengguna. Kami menyusun visi produk dan roadmap yang dapat dipertanggungjawabkan." },
+        execution: { title: "Eksekusi Agile", desc: "Ubah strategi menjadi perangkat lunak yang dikirimkan. Kami mengelola sprint, merapikan backlog, dan melancarkan insinyur." },
+        research: { title: "Riset Pengguna", desc: "Validasi sebelum membangun. Kami melakukan riset kualitatif dan kuantitatif untuk memitigasi risiko." },
+        growth: { title: "Pertumbuhan & Analitik", desc: "Ukur apa yang penting. Kami menerapkan pelacakan corong dan menjalankan eksperimen untuk mengoptimalkan konversi." },
+        design: { title: "Desain Produk", desc: "Kami berkolaborasi dengan desainer untuk membuat antarmuka intuitif dan dapat diakses yang memecahkan masalah pengguna." },
+        market: { title: "Intelijen Pasar", desc: "Kenali lanskap Anda. Kami menganalisis pesaing dan tren untuk mempertajam positioning Anda." }
       }
     },
     howItWorks: {
-      title: "Ini bukan sihir.",
-      subtitle: "Ini adalah sistem.",
-      desc: "Kami telah merampingkan proses manajemen produk untuk berintegrasi mulus dengan tim Anda yang ada. Tanpa onboarding panjang, tanpa overhead HR.",
+      title: "Pengiriman Produk",
+      subtitle: "Ter-sistematisasi.",
+      desc: "Kami telah merekayasa proses ramping yang berintegrasi dengan alur kerja Anda yang ada. Tanpa onboarding panjang, tanpa overhead HR.",
       steps: {
-        one: { title: "Langganan & Request", desc: "Pilih paket dan dapatkan akses segera ke papan Trello/Linear Anda. Kirim permintaan pertama Anda secara instan." },
-        two: { title: "Kami Eksekusi", desc: "PM berdedikasi Anda mengambil tugas. Apakah itu PRD, wawancara pengguna, atau rencana sprint, kami mulai bekerja." },
-        three: { title: "Review & Iterasi", desc: "Dapatkan hasil dalam 24-48 jam. Review, setujui, atau minta revisi. Kami terus berjalan sampai sempurna." }
+        one: { title: "Langganan & Request", desc: "Pilih paket dan akses papan khusus Anda secara instan. Kirim inisiatif pertama Anda." },
+        two: { title: "Pod Eksekusi", desc: "Pod PM Anda aktif. Tugas dieksekusi secara efisien, dengan strategi ditinjau oleh pimpinan Senior." },
+        three: { title: "Review & Iterasi", desc: "Terima hasil dalam 24-48 jam. Review, setujui, atau minta revisi hingga memenuhi standar Anda." }
       },
       mock: {
         reqTitle: "Request #120",
-        reqBody: "Kami butuh Dokumen Persyaratan Produk (PRD) untuk fitur analitik dashboard baru. Fokus pada metrik retensi.",
+        reqBody: "Butuh PRD untuk dashboard analitik baru. Fokus pada metrik retensi dan visualisasi data.",
         status: "Sedang Proses",
-        resBody: "Siap. Saya akan mulai dengan meninjau skema data saat ini dan implementasi kompetitor. Harapkan draf besok EOD.",
+        resBody: "Diterima. Kami sedang meninjau skema saat ini dan implementasi kompetitor. Pengiriman draf besok EOD.",
         sync: "Sinkronisasi ke Linear..."
       }
     },
     testimonials: {
-      title: "Dicintai oleh",
-      subtitle: "Founders & VP Products",
+      title: "Dipercaya oleh",
+      subtitle: "Pemimpin Produk",
       items: [
         { quote: "PMaaS mempercepat roadmap produk kami secara signifikan. Wawasan strategis mereka tentang pasar verifikasi identitas sangat berharga.", author: "Ahmad Taufik", role: "SVP Product", company: "VIDA" },
         { quote: "Sebagai CEO, saya butuh eksekusi. Tim ini berintegrasi dengan mulus dan mengirimkan fitur yang berdampak langsung pada hasil kami.", author: "Pandu Hartanto", role: "CEO", company: "Etalas" },
@@ -256,46 +256,46 @@ export const translations = {
       ]
     },
     pricing: {
-      title: "Harga sederhana & transparan.",
-      desc: "Tanpa biaya tersembunyi. Tanpa kontrak jangka panjang. Hanya tarif bulanan tetap untuk manajemen produk premium.",
+      title: "Investasi Transparan.",
+      desc: "Tanpa biaya tersembunyi. Tanpa kontrak jangka panjang. Hanya tarif bulanan yang dapat diprediksi untuk kepemimpinan produk premium.",
       mostPopular: "Paling Populer",
-      bookCall: "Jadwalkan panggilan",
-      notSure: "Tidak yakin paket mana?",
+      bookCall: "Konsultasi",
+      notSure: "Butuh panduan?",
       schedule: "Jadwalkan 15 mnt",
       plans: {
         standard: {
           name: "Standard",
-          desc: "Sempurna untuk startup yang membutuhkan Manajer Produk paruh waktu untuk menjaga momentum.",
-          btn: "Mulai Standard",
-          features: ["Satu permintaan sekaligus", "Rata-rata pengiriman 48 jam", "Strategi Produk & Roadmapping", "User Stories & PRD", "Manajemen Backlog", "Pengguna tak terbatas", "Jeda atau batalkan kapan saja"]
+          desc: "Ideal untuk startup yang membutuhkan eksekusi efisien didukung oleh pengawasan senior.",
+          btn: "Pilih Standard",
+          features: ["Satu permintaan aktif", "Rata-rata pengiriman 48 jam", "Strategi Produk & Roadmapping", "User Stories & PRD", "Manajemen Backlog", "Pengguna tak terbatas", "Jeda atau batalkan kapan saja"]
         },
         pro: {
           name: "Pro",
-          desc: "Setara dengan Senior PM. Terbaik untuk perusahaan berkembang dengan pengembangan aktif.",
-          btn: "Mulai Pro",
-          features: ["Dua permintaan sekaligus", "Dukungan prioritas", "Semua yang ada di Standard", "Riset & Pengujian Pengguna", "Setup Analitik Data", "Analisis Kompetitor", "Rapat Sinkronisasi Mingguan"]
+          desc: "Dirancang untuk perusahaan berkembang. Throughput ganda dengan keterlibatan strategis senior aktif.",
+          btn: "Pilih Pro",
+          features: ["Dua permintaan aktif", "Dukungan prioritas", "Semua yang ada di Standard", "Riset & Pengujian Pengguna", "Setup Analitik Data", "Analisis Kompetitor", "Rapat Sinkronisasi Mingguan"]
         },
         enterprise: {
           name: "Enterprise",
-          desc: "Untuk organisasi yang membutuhkan pod produk penuh (PM + Desainer + Analis).",
-          btn: "Hubungi Kami",
+          desc: "Untuk organisasi yang membutuhkan pod produk berdedikasi dan terintegrasi penuh.",
+          btn: "Hubungi Sales",
           features: ["Volume permintaan kustom", "Pod Produk Berdedikasi", "Ketersediaan setara penuh waktu", "Workshop di tempat", "SLA Perusahaan", "Integrasi alat kustom"]
         }
       }
     },
     faq: {
-      title: "Pertanyaan yang sering diajukan",
+      title: "Pertanyaan yang Sering Diajukan",
       items: [
-        { q: "Mengapa saya tidak mempekerjakan Manajer Produk penuh waktu saja?", a: "Mempekerjakan Senior PM memakan biaya $150k+ per tahun plus tunjangan, dan butuh berbulan-bulan untuk menemukan yang tepat. Dengan PMaaS, Anda mendapatkan akses segera ke talenta senior dengan sebagian kecil biaya, dengan fleksibilitas untuk jeda atau batal kapan saja." },
-        { q: "Apakah ada batasan berapa banyak permintaan yang bisa saya miliki?", a: "Tidak! Setelah berlangganan, Anda dapat menambahkan sebanyak mungkin permintaan ke antrean Anda. Kami mengirimkannya satu per satu (atau dua sekaligus pada paket Pro)." },
-        { q: "Seberapa cepat saya akan menerima hasil kerja?", a: "Rata-rata, permintaan diselesaikan hanya dalam 48 jam. Namun, permintaan yang lebih kompleks seperti strategi produk penuh atau PRD komprehensif bisa memakan waktu lebih lama." },
-        { q: "Siapa Manajer Produknya?", a: "Kami adalah tim Senior PM yang telah bekerja di perusahaan teknologi dan startup teratas. Anda tidak mendapatkan PM junior atau magang; Anda mendapatkan ahli berpengalaman." },
-        { q: "Bagaimana jika saya tidak menyukai pekerjaannya?", a: "Tidak masalah! Kami akan merevisinya sampai Anda 100% puas. Sifat langganan kami berarti kami termotivasi untuk membuat Anda senang setiap bulan." },
-        { q: "Saluran komunikasi apa yang Anda gunakan?", a: "Kami menggunakan Trello atau Linear untuk mengelola permintaan dan Slack untuk komunikasi cepat. Kami menghindari rapat yang tidak perlu untuk fokus pada eksekusi, tetapi paket Pro mencakup sinkronisasi mingguan." }
+        { q: "Mengapa menggunakan PMaaS daripada merekrut penuh waktu?", a: "Merekrut Senior PM memakan biaya $150k+ per tahun plus tunjangan, dengan waktu rekrutmen berbulan-bulan. PMaaS menawarkan akses segera ke pod talenta terkalibrasi dengan sebagian kecil biaya, dengan fleksibilitas untuk skala naik atau turun secara instan." },
+        { q: "Apakah ada batasan volume permintaan?", a: "Tidak. Anda dapat menambahkan permintaan tanpa batas ke backlog Anda. Kami mengirimkannya secara berurutan (atau dua secara bersamaan pada paket Pro), memastikan kemajuan yang stabil dan terfokus." },
+        { q: "Berapa waktu penyelesaian biasanya?", a: "Rata-rata, permintaan standar diselesaikan dalam 48 jam. Inisiatif strategis yang kompleks atau PRD komprehensif mungkin memerlukan waktu tambahan untuk kedalaman dan jaminan kualitas." },
+        { q: "Siapa yang terdiri dari tim produk?", a: "Kami menggunakan struktur pod campuran. Akun Anda diawasi oleh Senior PM Veteran (eks-Unicorn/Big Tech) untuk strategi dan QA, sementara eksekusi ditangani oleh PM tingkat Menengah dan Associate yang efisien. Ini menyeimbangkan strategi tingkat tinggi dengan eksekusi yang hemat biaya." },
+        { q: "Bagaimana jika hasilnya tidak memenuhi harapan?", a: "Kami menawarkan revisi tanpa batas. Kami akan mengulangi hasil kerja sampai memenuhi standar tepat Anda. Model langganan kami memastikan kami terus termotivasi untuk memberikan nilai." },
+        { q: "Apa protokol komunikasinya?", a: "Kami menggunakan alat async seperti Trello atau Linear untuk manajemen backlog dan Slack untuk komunikasi cepat. Kami meminimalkan overhead rapat untuk memaksimalkan waktu eksekusi, meskipun paket Pro mencakup sinkronisasi penyelarasan mingguan." }
       ]
     },
     footer: {
-      desc: "Cara modern untuk menskalakan tim produk. Manajemen Produk Fraksional untuk startup ambisius.",
+      desc: "Model operasi modern untuk menskalakan tim produk. Manajemen Produk Fraksional untuk perusahaan ambisius.",
       sitemap: "Peta Situs",
       legal: "Legal",
       connect: "Terhubung",

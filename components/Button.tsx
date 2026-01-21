@@ -21,23 +21,23 @@ export const Button: React.FC<ButtonProps> = ({
   href,
   ...props
 }) => {
-  const baseStyles = "relative overflow-hidden inline-flex items-center justify-center rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background disabled:opacity-50 disabled:pointer-events-none active:scale-95 group hover:scale-[1.02]";
+  const baseStyles = "relative overflow-hidden inline-flex items-center justify-center rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background disabled:opacity-50 disabled:pointer-events-none active:scale-[0.98] group hover:scale-[1.02]";
   
   const variants = {
     // Primary: Uses primary color for background (Black in Light, White in Dark) and background color for text
-    primary: "bg-primary text-background hover:opacity-90 focus:ring-primary shadow-[0_0_15px_rgba(var(--primary),0.1)] hover:shadow-[0_0_20px_rgba(var(--primary),0.3)]",
+    primary: "bg-primary text-background hover:opacity-90 focus:ring-primary shadow-[0_4px_14px_0_rgba(var(--primary),0.2)] hover:shadow-[0_6px_20px_rgba(var(--primary),0.3)]",
     
     // Secondary: Uses surface highlight. Text must be primary to be visible on light grey (Light Mode) or dark grey (Dark Mode).
-    secondary: "bg-surfaceHighlight text-primary hover:bg-surfaceHighlight/80 focus:ring-muted",
+    secondary: "bg-surfaceHighlight text-primary hover:bg-surfaceHighlight/80 focus:ring-muted border border-transparent hover:border-border",
     
     // Ghost: Transparent background, muted text that turns to primary on hover.
     ghost: "bg-transparent text-muted hover:text-primary hover:bg-surfaceHighlight/50",
     
     // Outline: Border color matches theme border, text is primary.
-    outline: "border border-border bg-transparent text-primary hover:border-primary hover:bg-primary/5",
+    outline: "border border-border bg-transparent text-primary hover:border-primary/50 hover:bg-primary/5",
 
     // Accent: Brand blue color, always white text. Good for call-to-actions that need to stand out from the monochrome theme.
-    accent: "bg-blue-600 text-white hover:bg-blue-500 shadow-[0_0_15px_rgba(37,99,235,0.3)] hover:shadow-[0_0_20px_rgba(37,99,235,0.5)] border-transparent focus:ring-blue-500",
+    accent: "bg-blue-600 text-white hover:bg-blue-500 shadow-[0_4px_14px_0_rgba(37,99,235,0.3)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.45)] border-transparent focus:ring-blue-500",
   };
 
   const sizes = {
@@ -51,12 +51,12 @@ export const Button: React.FC<ButtonProps> = ({
 
   const content = (
     <>
-      <span className="relative z-10 flex items-center">
+      <span className="relative z-10 flex items-center gap-2">
         {children}
-        {withArrow && <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />}
+        {withArrow && <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />}
       </span>
       {variant === 'primary' && (
-        <div className="absolute inset-0 -translate-x-full group-hover:animate-shimmer bg-gradient-to-r from-transparent via-surface/20 to-transparent z-0" />
+        <div className="absolute inset-0 -translate-x-full group-hover:animate-shimmer bg-gradient-to-r from-transparent via-white/10 to-transparent z-0" />
       )}
     </>
   );

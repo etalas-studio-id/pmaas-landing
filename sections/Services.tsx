@@ -27,7 +27,7 @@ export const Services: React.FC = () => {
   return (
     <Section id="services" className="bg-surfaceHighlight/30">
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <FadeIn>
+        <FadeIn direction="up">
           <h2 className="text-3xl md:text-5xl font-display font-bold text-primary mb-6">
             {t.services.title} <br/>
             <span className="text-muted">{t.services.subtitle}</span>
@@ -40,10 +40,10 @@ export const Services: React.FC = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((service, index) => (
-          <FadeIn key={index} delay={index * 100} className="h-full">
+          <FadeIn key={index} delay={index * 100} className="h-full" scale>
             <div 
               onMouseMove={handleMouseMove}
-              className="group relative h-full p-8 rounded-2xl bg-surface border border-border hover:border-blue-500/30 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-900/10 overflow-hidden will-change-transform transform-gpu"
+              className="group relative h-full p-8 rounded-2xl bg-surface border border-border hover:border-blue-500/30 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl hover:shadow-blue-900/5 overflow-hidden will-change-transform transform-gpu"
             >
               {/* Spotlight Effect */}
               <div 
@@ -53,17 +53,19 @@ export const Services: React.FC = () => {
                 }}
               />
 
-              <div className="relative z-10">
-                <div className="w-12 h-12 rounded-lg bg-background border border-border flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:border-blue-500 group-hover:text-white transition-all duration-300 text-muted group-hover:scale-110">
+              <div className="relative z-10 flex flex-col h-full">
+                <div className="w-12 h-12 rounded-lg bg-background border border-border flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:border-blue-500 group-hover:text-white transition-all duration-300 text-muted group-hover:scale-110 shadow-sm">
                   <service.icon className="w-6 h-6" />
                 </div>
+                
                 <h3 className="text-xl font-bold text-primary mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-100 transition-colors">{service.title}</h3>
-                <p className="text-muted mb-6 leading-relaxed group-hover:text-primary transition-colors">
+                <p className="text-muted mb-6 leading-relaxed group-hover:text-primary transition-colors flex-grow">
                   {service.desc}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                
+                <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-border/40 group-hover:border-border/80 transition-colors">
                   {service.tags.map(tag => (
-                    <span key={tag} className="text-xs font-medium px-2 py-1 rounded bg-background text-muted border border-border group-hover:border-blue-500/20 group-hover:text-blue-500/80 transition-colors">
+                    <span key={tag} className="text-xs font-medium px-2.5 py-1 rounded bg-background text-muted border border-border group-hover:border-blue-500/20 group-hover:text-blue-500/80 transition-colors">
                       {tag}
                     </span>
                   ))}

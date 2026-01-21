@@ -17,8 +17,8 @@ export const Pricing: React.FC = () => {
   const plans: PricingPlan[] = [
     {
       name: t.pricing.plans.standard.name,
-      price: 'Rp10.000.000',
-      period: '/mo',
+      price: 'Rp 15 Mio',
+      period: '/mo (or $1,000)',
       description: t.pricing.plans.standard.desc,
       buttonText: t.pricing.plans.standard.btn,
       buttonLink: createWhatsappLink(`Hi, I'm interested in the ${t.pricing.plans.standard.name} PMaaS plan.`),
@@ -26,8 +26,8 @@ export const Pricing: React.FC = () => {
     },
     {
       name: t.pricing.plans.pro.name,
-      price: 'Rp30.000.000',
-      period: '/mo',
+      price: 'Rp 45 Mio',
+      period: '/mo (or $3,000)',
       description: t.pricing.plans.pro.desc,
       popular: true,
       buttonText: t.pricing.plans.pro.btn,
@@ -62,7 +62,7 @@ export const Pricing: React.FC = () => {
         {plans.map((plan, index) => (
           <FadeIn key={index} delay={index * 150} className="flex flex-col h-full">
             <div 
-              className={`relative flex flex-col h-full p-8 rounded-2xl border transition-all duration-300 ${
+              className={`relative flex flex-col h-full p-8 rounded-2xl border transition-all duration-300 will-change-transform transform-gpu ${
                 plan.popular 
                   ? 'bg-blue-50 dark:bg-blue-900/10 border-blue-200 dark:border-blue-500/50 shadow-[0_0_40px_-10px_rgba(59,130,246,0.2)] hover:border-blue-300 dark:hover:border-blue-400/80 hover:shadow-[0_0_60px_-10px_rgba(59,130,246,0.3)]' 
                   : 'bg-background border-border hover:border-muted/50 hover:shadow-xl'
@@ -81,7 +81,7 @@ export const Pricing: React.FC = () => {
 
               <div className="mb-8">
                 <span className="text-3xl lg:text-4xl font-bold text-primary tracking-tight">{plan.price}</span>
-                <span className="text-muted">{plan.period}</span>
+                <span className="text-sm font-medium text-muted block mt-1">{plan.period}</span>
               </div>
 
               <Button 
