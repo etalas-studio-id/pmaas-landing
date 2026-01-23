@@ -29,9 +29,9 @@ export const Hero: React.FC = () => {
             </div>
           </FadeIn>
           
-          {/* LCP Optimization: Reduced delays for title animation & added will-change */}
-          <h1 className="text-5xl md:text-7xl font-display font-bold text-primary tracking-tight leading-[1.1] mb-6 flex flex-wrap gap-x-3 gap-y-1">
-            <span className="flex flex-wrap gap-x-3">
+          {/* LCP Optimization: Responsive text sizing */}
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold text-primary tracking-tight leading-[1.15] md:leading-[1.1] mb-6 flex flex-wrap gap-x-2 md:gap-x-3 gap-y-1">
+            <span className="flex flex-wrap gap-x-2 md:gap-x-3">
               {titleLine1Words.map((word, i) => (
                 <span 
                   key={`l1-${i}`} 
@@ -42,7 +42,7 @@ export const Hero: React.FC = () => {
                 </span>
               ))}
             </span>
-            <span className="flex flex-wrap gap-x-3">
+            <span className="flex flex-wrap gap-x-2 md:gap-x-3">
               {titleLine2Words.map((word, i) => (
                 <span 
                   key={`l2-${i}`} 
@@ -63,14 +63,14 @@ export const Hero: React.FC = () => {
           
           <FadeIn delay={500}>
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-12">
-              <Button size="lg" withArrow href="#pricing" className="shadow-lg shadow-blue-600/10" aria-label="View pricing plans">
+              <Button size="lg" withArrow href="#pricing" className="shadow-lg shadow-blue-600/10 w-full sm:w-auto" aria-label="View pricing plans">
                 {t.hero.viewPlans}
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
                 href="#how-it-works"
-                className="group border-border hover:border-blue-500/50 hover:bg-blue-500/5"
+                className="group border-border hover:border-blue-500/50 hover:bg-blue-500/5 w-full sm:w-auto"
                 aria-label="Learn how it works"
               >
                 <PlayCircle className="mr-2 h-5 w-5 group-hover:text-blue-500 transition-colors" />
@@ -80,7 +80,7 @@ export const Hero: React.FC = () => {
           </FadeIn>
 
           <FadeIn delay={600}>
-            <div className="flex flex-wrap gap-6 text-sm font-medium text-muted">
+            <div className="flex flex-wrap gap-4 sm:gap-6 text-sm font-medium text-muted">
               <div className="flex items-center group cursor-default">
                 <div className="mr-2 rounded-full bg-green-500/10 p-1 group-hover:bg-green-500/20 transition-colors">
                   <CheckCircle2 className="w-3.5 h-3.5 text-green-600 dark:text-green-400" />

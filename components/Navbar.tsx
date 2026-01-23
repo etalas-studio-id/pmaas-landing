@@ -138,9 +138,9 @@ export const Navbar: React.FC = () => {
         />
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Fixed, Full Height with Scroll */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-background border-b border-border absolute w-full animate-fade-in shadow-lg">
+        <div className="md:hidden bg-background border-b border-border absolute w-full max-h-[calc(100vh-80px)] overflow-y-auto animate-fade-in shadow-2xl">
           <div className="px-4 pt-2 pb-6 space-y-2">
             {links.map((link) => (
               <a
@@ -156,7 +156,7 @@ export const Navbar: React.FC = () => {
                 {link.label}
               </a>
             ))}
-            <div className="pt-4">
+            <div className="pt-4 border-t border-border mt-4">
               <Button fullWidth href="#pricing" onClick={() => setIsMobileMenuOpen(false)}>
                 {t.nav.getStarted}
               </Button>
