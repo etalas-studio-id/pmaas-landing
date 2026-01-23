@@ -7,6 +7,7 @@ import { ScrollToTop } from './components/ScrollToTop';
 import { WhatsAppButton } from './components/WhatsAppButton';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { LanguageProvider } from './contexts/LanguageContext';
+import { ErrorBoundary } from './components/ErrorBoundary';
 
 // Lazy load sections below the fold
 const WhatIsPmaas = lazy(() => import('./sections/WhatIsPmaas').then(module => ({ default: module.WhatIsPmaas })));
@@ -33,17 +34,19 @@ function AppContent() {
         <Hero />
         <Brands />
         
-        {/* Lazy load the rest */}
-        <Suspense fallback={<SectionLoader />}>
-          <WhatIsPmaas />
-          <Benefits />
-          <UseCases />
-          <Services />
-          <HowItWorks />
-          <Testimonials />
-          <Pricing />
-          <Faq />
-        </Suspense>
+        {/* Lazy load the rest with Error Boundary protection */}
+        <ErrorBoundary>
+          <Suspense fallback={<SectionLoader />}>
+            <WhatIsPmaas />
+            <Benefits />
+            <UseCases />
+            <Services />
+            <HowItWorks />
+            <Testimonials />
+            <Pricing />
+            <Faq />
+          </Suspense>
+        </ErrorBoundary>
       </main>
       <Footer />
       <ScrollToTop />

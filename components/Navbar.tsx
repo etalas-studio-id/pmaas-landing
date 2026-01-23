@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Menu, X, Rocket } from 'lucide-react';
 import { Button } from './Button';
 import { NavLink } from '../types';
@@ -12,43 +12,59 @@ export const Navbar: React.FC = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const { t } = useLanguage();
 
-  const links: NavLink[] = [
+  // FIX: Memoize links to prevent useEffect from re-running on every render
+  const links: NavLink[] = useMemo(() => [
     { label: t.nav.about, href: '#what-is-pmaas' },
     { label: t.nav.useCases, href: '#use-cases' },
     { label: t.nav.services, href: '#services' },
     { label: t.nav.pricing, href: '#pricing' },
     { label: t.nav.faq, href: '#faq' },
-  ];
+  ], [t]);
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      // Handle Navbar transparency
-      setIsScrolled(window.scrollY > 20);
+      // FIX: Throttling scroll events using requestAnimationFrame for performance
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          // Handle Navbar transparency
+          setIsScrolled(window.scrollY > 20);
 
-      // Handle Scroll Progress Bar
-      const totalScroll = document.documentElement.scrollTop;
-      const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scroll = `${totalScroll / windowHeight}`;
-      setScrollProgress(Number(scroll));
+          // Handle Scroll Progress Bar
+          const totalScroll = document.documentElement.scrollTop;
+          const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          const scroll = windowHeight > 0 ? totalScroll / windowHeight : 0;
+          setScrollProgress(Number(scroll));
 
-      // Handle Active Section Logic (ScrollSpy)
-      const sections = links.map(link => link.href.substring(1));
-      let current = '';
-      
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          // If the top of the section is near the top of the viewport (with some offset)
-          if (rect.top <= 150 && rect.bottom >= 150) {
-            current = `#${section}`;
+          // Handle Active Section Logic (ScrollSpy)
+          const sections = links.map(link => link.href.substring(1));
+          let current = '';
+          
+          for (const section of sections) {
+            const element = document.getElementById(section);
+            if (element) {
+              const rect = element.getBoundingClientRect();
+              // Offset logic: if the section top is within the upper part of the viewport
+              if (rect.top <= 150 && rect.bottom >= 150) {
+                current = `#${section}`;
+              }
+            }
           }
-        }
+          // Only update state if it changed
+          setActiveSection(prev => (prev !== current ? current : prev));
+          
+          ticking = false;
+        });
+        
+        ticking = true;
       }
-      setActiveSection(current);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    // Trigger once on mount to set initial state
+    handleScroll();
+    
     return () => window.removeEventListener('scroll', handleScroll);
   }, [links]);
 

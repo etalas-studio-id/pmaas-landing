@@ -29,13 +29,14 @@ export const Hero: React.FC = () => {
             </div>
           </FadeIn>
           
+          {/* LCP Optimization: Reduced delays for title animation */}
           <h1 className="text-5xl md:text-7xl font-display font-bold text-primary tracking-tight leading-[1.1] mb-6 flex flex-wrap gap-x-3 gap-y-1">
             <span className="flex flex-wrap gap-x-3">
               {titleLine1Words.map((word, i) => (
                 <span 
                   key={`l1-${i}`} 
                   className="inline-block opacity-0 animate-word-bounce" 
-                  style={{ animationDelay: `${100 + i * 100}ms` }}
+                  style={{ animationDelay: `${50 + i * 50}ms` }}
                 >
                   {word}
                 </span>
@@ -46,7 +47,7 @@ export const Hero: React.FC = () => {
                 <span 
                   key={`l2-${i}`} 
                   className="inline-block opacity-0 animate-word-bounce text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 dark:from-blue-400 dark:via-purple-400 dark:to-indigo-400"
-                  style={{ animationDelay: `${100 + (titleLine1Words.length * 100) + (i * 100)}ms` }}
+                  style={{ animationDelay: `${50 + (titleLine1Words.length * 50) + (i * 50)}ms` }}
                 >
                   {word}
                 </span>
@@ -54,15 +55,15 @@ export const Hero: React.FC = () => {
             </span>
           </h1>
           
-          <FadeIn delay={800}>
+          <FadeIn delay={400}>
             <p className="text-lg md:text-xl text-muted mb-10 leading-relaxed max-w-lg font-light">
               {t.hero.description}
             </p>
           </FadeIn>
           
-          <FadeIn delay={900}>
+          <FadeIn delay={500}>
             <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-12">
-              <Button size="lg" withArrow href="#pricing" className="shadow-lg shadow-blue-600/10">
+              <Button size="lg" withArrow href="#pricing" className="shadow-lg shadow-blue-600/10" aria-label="View pricing plans">
                 {t.hero.viewPlans}
               </Button>
               <Button 
@@ -70,6 +71,7 @@ export const Hero: React.FC = () => {
                 variant="outline" 
                 href="#how-it-works"
                 className="group border-border hover:border-blue-500/50 hover:bg-blue-500/5"
+                aria-label="Learn how it works"
               >
                 <PlayCircle className="mr-2 h-5 w-5 group-hover:text-blue-500 transition-colors" />
                 {t.hero.howItWorks}
@@ -77,7 +79,7 @@ export const Hero: React.FC = () => {
             </div>
           </FadeIn>
 
-          <FadeIn delay={1000}>
+          <FadeIn delay={600}>
             <div className="flex flex-wrap gap-6 text-sm font-medium text-muted">
               <div className="flex items-center group cursor-default">
                 <div className="mr-2 rounded-full bg-green-500/10 p-1 group-hover:bg-green-500/20 transition-colors">
@@ -97,7 +99,7 @@ export const Hero: React.FC = () => {
 
         {/* Enhanced Visual Element - Infographic Style */}
         <div className="relative hidden lg:block perspective-1000">
-           <FadeIn delay={1100} direction="left" scale>
+           <FadeIn delay={700} direction="left" scale>
              {/* Abstract glow */}
              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-blue-500/10 via-purple-500/10 to-transparent blur-3xl rounded-full animate-pulse-slow pointer-events-none" />
              
@@ -138,7 +140,7 @@ export const Hero: React.FC = () => {
                               className={`h-full rounded-full animate-progress-fill ${item.color} shadow-[0_0_10px_rgba(0,0,0,0.1)] relative overflow-hidden`} 
                               style={{ 
                                 '--target-width': item.progress, 
-                                animationDelay: `${1200 + i * 300}ms` 
+                                animationDelay: `${800 + i * 200}ms` 
                               } as React.CSSProperties}
                             >
                               <div className="absolute inset-0 bg-white/20 animate-shimmer" />
@@ -148,7 +150,7 @@ export const Hero: React.FC = () => {
                    ))}
                    
                    {/* Floating Stats Card */}
-                   <div className="absolute -right-8 -bottom-6 p-5 bg-background border border-border/60 rounded-xl shadow-xl flex items-center space-x-4 animate-pop-in backdrop-blur-md" style={{ animationDelay: '2s' }}>
+                   <div className="absolute -right-8 -bottom-6 p-5 bg-background border border-border/60 rounded-xl shadow-xl flex items-center space-x-4 animate-pop-in backdrop-blur-md" style={{ animationDelay: '1.2s' }}>
                       <div className="w-10 h-10 rounded-full bg-green-500/10 flex items-center justify-center">
                          <ArrowUpRight className="w-5 h-5 text-green-600 dark:text-green-400" />
                       </div>

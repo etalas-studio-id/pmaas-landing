@@ -1,20 +1,42 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# PMaaS - Product Management as a Service
 
-# Run and deploy your AI Studio app
+A modern, high-performance landing page for a fractional Product Management agency. Built with React, Tailwind CSS, and TypeScript.
 
-This contains everything you need to run your app locally.
+## 🚀 Overview
 
-View your app in AI Studio: https://ai.studio/apps/drive/19ve4BRL-HnUzEyK-BJPviJ9pFnyC-Gbc
+PMaaS (Product Management as a Service) is a platform that connects startups and enterprises with world-class product management pods for a flat monthly fee. This web application serves as the primary marketing funnel, showcasing services, pricing, and case studies with a premium, executive aesthetic.
 
-## Run Locally
+## ✨ Features
 
-**Prerequisites:**  Node.js
+- **Modern Visual Identity**: High-end minimalist design with complex animations (parallax, marquees, spotlights).
+- **Dark/Light Mode**: Fully responsive theme switching with system preference detection.
+- **Internationalization (i18n)**: Instant language toggling between English (EN) and Indonesian (ID).
+- **Performance Optimized**: GPU-accelerated animations, lazy-loaded sections, and optimized assets.
+- **Responsive Design**: Fluid layout adapting seamlessly from mobile to 4K desktop screens.
 
+## 🛠 Tech Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **Framework**: React 18+
+- **Styling**: Tailwind CSS (via CDN for portability)
+- **Icons**: Lucide React
+- **Language**: TypeScript
+
+## 📁 Project Structure
+
+```
+├── components/       # Reusable UI components (Button, Navbar, Section, etc.)
+├── sections/         # Page sections (Hero, Pricing, Services, etc.)
+├── contexts/         # Global state (Theme, Language)
+├── utils/            # Helpers and static data (translations, tooltips)
+├── types.ts          # TypeScript definitions
+├── App.tsx           # Main application layout
+└── index.tsx         # Entry point
+```
+
+## 🚀 Deployment
+
+This project is designed to be deployed instantly on any static host (Vercel, Netlify, GitHub Pages).
+
+## 📄 License
+
+© 2024 PMaaS Inc. All rights reserved.
