@@ -13,8 +13,8 @@ export const Hero: React.FC = () => {
 
   return (
     <Section className="pt-32 md:pt-48 pb-16 md:pb-24 overflow-visible">
-      {/* Background Ambience - Slower Parallax Float */}
-      <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[1200px] h-[600px] bg-gradient-to-br from-blue-600/10 via-purple-600/10 to-transparent blur-[100px] rounded-full pointer-events-none -z-10 animate-float"></div>
+      {/* Background Ambience - GPU Accelerated */}
+      <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[1200px] h-[600px] bg-gradient-to-br from-blue-600/10 via-purple-600/10 to-transparent blur-[100px] rounded-full pointer-events-none -z-10 animate-float transform-gpu will-change-transform"></div>
 
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         <div className="max-w-2xl relative z-10">
@@ -29,13 +29,13 @@ export const Hero: React.FC = () => {
             </div>
           </FadeIn>
           
-          {/* LCP Optimization: Reduced delays for title animation */}
+          {/* LCP Optimization: Reduced delays for title animation & added will-change */}
           <h1 className="text-5xl md:text-7xl font-display font-bold text-primary tracking-tight leading-[1.1] mb-6 flex flex-wrap gap-x-3 gap-y-1">
             <span className="flex flex-wrap gap-x-3">
               {titleLine1Words.map((word, i) => (
                 <span 
                   key={`l1-${i}`} 
-                  className="inline-block opacity-0 animate-word-bounce" 
+                  className="inline-block opacity-0 animate-word-bounce will-change-[transform,opacity]" 
                   style={{ animationDelay: `${50 + i * 50}ms` }}
                 >
                   {word}
@@ -46,7 +46,7 @@ export const Hero: React.FC = () => {
               {titleLine2Words.map((word, i) => (
                 <span 
                   key={`l2-${i}`} 
-                  className="inline-block opacity-0 animate-word-bounce text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 dark:from-blue-400 dark:via-purple-400 dark:to-indigo-400"
+                  className="inline-block opacity-0 animate-word-bounce text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 dark:from-blue-400 dark:via-purple-400 dark:to-indigo-400 will-change-[transform,opacity]"
                   style={{ animationDelay: `${50 + (titleLine1Words.length * 50) + (i * 50)}ms` }}
                 >
                   {word}
@@ -101,10 +101,10 @@ export const Hero: React.FC = () => {
         <div className="relative hidden lg:block perspective-1000">
            <FadeIn delay={700} direction="left" scale>
              {/* Abstract glow */}
-             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-blue-500/10 via-purple-500/10 to-transparent blur-3xl rounded-full animate-pulse-slow pointer-events-none" />
+             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-blue-500/10 via-purple-500/10 to-transparent blur-3xl rounded-full animate-pulse-slow pointer-events-none will-change-[opacity]" />
              
              {/* Main Card */}
-             <div className="relative bg-surface/60 backdrop-blur-xl border border-primary/5 rounded-2xl p-8 shadow-2xl transition-transform hover:scale-[1.02] duration-700 animate-float shadow-blue-900/10">
+             <div className="relative bg-surface/60 backdrop-blur-xl border border-primary/5 rounded-2xl p-8 shadow-2xl transition-transform hover:scale-[1.02] duration-700 animate-float shadow-blue-900/10 transform-gpu will-change-transform">
                 
                 {/* Card Header */}
                 <div className="flex items-center justify-between mb-8 border-b border-border/50 pb-6">

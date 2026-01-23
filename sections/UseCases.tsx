@@ -17,12 +17,17 @@ export const UseCases: React.FC = () => {
   const accentColors = ["text-pink-500", "text-blue-500", "text-orange-500"];
   const bgAccents = ["group-hover:bg-pink-500/5 group-hover:border-pink-500/20", "group-hover:bg-blue-500/5 group-hover:border-blue-500/20", "group-hover:bg-orange-500/5 group-hover:border-orange-500/20"];
 
+  // Performance: Throttle mouse events for spotlight effect
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
+    const card = e.currentTarget;
+    const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-    e.currentTarget.style.setProperty('--mouse-x', `${x}px`);
-    e.currentTarget.style.setProperty('--mouse-y', `${y}px`);
+    
+    requestAnimationFrame(() => {
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+    });
   };
 
   return (
@@ -48,11 +53,11 @@ export const UseCases: React.FC = () => {
             <FadeIn key={index} delay={index * 150} className="h-full" scale>
               <div 
                 onMouseMove={handleMouseMove}
-                className={`relative group h-full overflow-hidden rounded-2xl bg-surface border border-border p-8 transition-all duration-300 ${bgHoverClass} hover:-translate-y-1 hover:scale-[1.01] hover:shadow-2xl hover:shadow-primary/5`}
+                className={`relative group h-full overflow-hidden rounded-2xl bg-surface border border-border p-8 transition-all duration-300 ${bgHoverClass} hover:-translate-y-1 hover:scale-[1.01] hover:shadow-2xl hover:shadow-primary/5 will-change-transform transform-gpu`}
               >
-                 {/* Spotlight Effect */}
+                 {/* Spotlight Effect - Optimized */}
                  <div 
-                  className="pointer-events-none absolute -inset-px opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0 mix-blend-soft-light"
+                  className="pointer-events-none absolute -inset-px opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0 mix-blend-soft-light will-change-[opacity]"
                   style={{
                     background: `radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(var(--primary), 0.08), transparent 40%)`
                   }}
